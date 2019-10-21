@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
       {children}
       <footer>
         <p id="copyright">
-          Scott Ball © <span id="year">{new Date().getFullYear()}</span>
+          {data.site.title} © <span id="year">{new Date().getFullYear()}</span>
         </p>
       </footer>
     </>

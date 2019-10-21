@@ -1,4 +1,5 @@
 html {
+  height: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -12,6 +13,7 @@ html {
 
 body {
   margin: 0;
+  height: 100%;
   background: #212121;
   color: #fafafa;
   font-family: "Viga", sans-serif;
@@ -632,11 +634,12 @@ a {
 
 #content {
   display: flex;
-  justify-content: center;
   height: 95vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  padding: 1em 1em 7em 1em;
 }
 
 .profile-img {
