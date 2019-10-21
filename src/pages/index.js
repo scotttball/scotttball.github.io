@@ -24,6 +24,7 @@ const IndexPage = () => (
       <div id="icons">
         <a
           className="icon-link"
+          alt="email link"
           target="_blank"
           rel="noopener noreferrer"
           href="mailto:scotttball@gmail.com"
@@ -32,6 +33,7 @@ const IndexPage = () => (
         </a>
         <a
           className="icon-link"
+          alt="linkedin link"
           target="_blank"
           rel="noopener noreferrer"
           href="https://www.linkedin.com/in/ballscott/"
@@ -40,6 +42,7 @@ const IndexPage = () => (
         </a>
         <a
           className="icon-link"
+          alt="github link"
           target="_blank"
           rel="noopener noreferrer"
           href="https://github.com/scotttball"
@@ -48,6 +51,7 @@ const IndexPage = () => (
         </a>
         <a
           className="icon-link"
+          alt="facebook link"
           target="_blank"
           rel="noopener noreferrer"
           href="https://www.facebook.com/scotttball"
@@ -56,6 +60,7 @@ const IndexPage = () => (
         </a>
         <a
           className="icon-link"
+          alt="keybase link"
           target="_blank"
           rel="noopener noreferrer"
           href="https://keybase.io/scotttball"
