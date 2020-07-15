@@ -1,10 +1,10 @@
 {
   "scripts": {
     "build": "snowpack build --treeshake",
-    "build:tailwind": "NODE_ENV=production tailwindcss build tailwind.css -o tailwind.generated.css",
+    "build:tailwind": "NODE_ENV=production tailwindcss build tailwind.css -o src/tailwind.generated.css",
     "start:snowpack": "snowpack dev",
     "build:css": "postcss",
-    "watch:tailwind": "chokidar 'src/**/*.css' 'src/**/*.scss' --ignore tailwind.generated.css -c 'npm run build:tailwind'",
+    "watch:tailwind": "chokidar 'src/**/*.css' 'src/**/*.scss' --ignore src/tailwind.generated.css -c 'npm run build:tailwind'",
     "start": "run-p watch:tailwind start:snowpack",
     "prepublish": "yarn build:tailwind",
     "test": "jest",
