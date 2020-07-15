@@ -33,7 +33,13 @@ const colors = {
 };
 
 module.exports = {
-  purge: ['./src/**/*.html', './src/**/*.tsx', './src/**/*.jsx'],
+  purge: {
+    enabled: process.env.NODE_ENV === 'production',
+    content: [
+      'src/**/*.ts',
+      'src/**/*.tsx',
+    ]
+  },
   theme: {
     screens: {
       sm: '640px',
