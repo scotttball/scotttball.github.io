@@ -378,7 +378,6 @@ pre {
 button {
   background-color: transparent;
   background-image: none;
-  padding: 0;
 }
 
 /**
@@ -591,8 +590,6 @@ video {
   height: auto;
 }
 
-/*tailwind start components */
-
 .container {
   width: 100%;
 }
@@ -620,8 +617,6 @@ video {
     max-width: 1660px;
   }
 }
-
-/*tailwind end components */
 
 .space-x-4 > :not(template) ~ :not(template) {
   --space-x-reverse: 0;
@@ -656,6 +651,72 @@ video {
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+@-webkit-keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes pulse {
+  50% {
+    opacity: .5;
+  }
+}
+
+@keyframes pulse {
+  50% {
+    opacity: .5;
+  }
+}
+
+@-webkit-keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    -webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);
+            animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+
+  50% {
+    transform: none;
+    -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
+            animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    -webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);
+            animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+
+  50% {
+    transform: none;
+    -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
+            animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
 }
 
 .icon {
@@ -765,4 +826,124 @@ h1 {
 
 #footer {
   height: 1rem;
+}
+
+@media (min-width: 640px) {
+  .sm\:container {
+    width: 100%;
+  }
+
+  @media (min-width: 640px) {
+    .sm\:container {
+      max-width: 640px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .sm\:container {
+      max-width: 768px;
+    }
+  }
+
+  @media (min-width: 1366px) {
+    .sm\:container {
+      max-width: 1366px;
+    }
+  }
+
+  @media (min-width: 1660px) {
+    .sm\:container {
+      max-width: 1660px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:container {
+    width: 100%;
+  }
+
+  @media (min-width: 640px) {
+    .md\:container {
+      max-width: 640px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .md\:container {
+      max-width: 768px;
+    }
+  }
+
+  @media (min-width: 1366px) {
+    .md\:container {
+      max-width: 1366px;
+    }
+  }
+
+  @media (min-width: 1660px) {
+    .md\:container {
+      max-width: 1660px;
+    }
+  }
+}
+
+@media (min-width: 1366px) {
+  .lg\:container {
+    width: 100%;
+  }
+
+  @media (min-width: 640px) {
+    .lg\:container {
+      max-width: 640px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .lg\:container {
+      max-width: 768px;
+    }
+  }
+
+  @media (min-width: 1366px) {
+    .lg\:container {
+      max-width: 1366px;
+    }
+  }
+
+  @media (min-width: 1660px) {
+    .lg\:container {
+      max-width: 1660px;
+    }
+  }
+}
+
+@media (min-width: 1660px) {
+  .xl\:container {
+    width: 100%;
+  }
+
+  @media (min-width: 640px) {
+    .xl\:container {
+      max-width: 640px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .xl\:container {
+      max-width: 768px;
+    }
+  }
+
+  @media (min-width: 1366px) {
+    .xl\:container {
+      max-width: 1366px;
+    }
+  }
+
+  @media (min-width: 1660px) {
+    .xl\:container {
+      max-width: 1660px;
+    }
+  }
 }

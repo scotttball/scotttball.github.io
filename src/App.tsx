@@ -9,9 +9,7 @@ import React from 'react';
 
 import profilePic from './scottpic.png';
 
-interface AppProps {}
-
-function App({}: AppProps) {
+function App() {
   return (
     <div className="flex flex-col h-screen">
       <main className="flex flex-col items-center justify-center flex-1">
